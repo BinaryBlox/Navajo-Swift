@@ -2,9 +2,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "Navajo-Swift",
+    name: "Navajo",
     products: [
-        .library(name: "Navajo-Swift", targets: ["Navajo-Swift"]),
+        .library(name: "Navajo", targets: ["Navajo iOS"]),
     ],
 //     dependencies: [
 //         .package(url: "https://github.com/phimage/Erik.git", .upToNextMajor(from: "5.0.0")),
@@ -12,7 +12,7 @@ let package = Package(
 //         .package(url: "https://github.com/httpswift/swifter.git", .upToNextMajor(from: "1.4.7"))
 //     ],
     targets: [
-        .target(name: "OAuthSwift", dependencies: [], path: "Sources"),
-        .testTarget(name: "OAuthSwiftTests", dependencies: ["OAuthSwift", "Erik", "Kanna", "Swifter"], path: "OAuthSwiftTests"),
+        .target(name: "Navajo iOS", dependencies: [], path: "Sources"),
+        //.testTarget(name: "OAuthSwiftTests", dependencies: ["OAuthSwift", "Erik", "Kanna", "Swifter"], path: "OAuthSwiftTests"),
     ]
 )
